@@ -1,6 +1,6 @@
 <script lang="ts">
   import Layout from "./components/shared/Layout.svelte";
-  import { page, params } from "./stores/router";
+  import { page } from "./stores/router";
   import "./router/router";
 </script>
 

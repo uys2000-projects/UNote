@@ -1,6 +1,8 @@
 <script lang="ts">
-  import { animateCssOnIn, animateCssOnOut } from "../functions/animateCSS.js";
+  import { fly } from "svelte/transition";
+  import { animateCssOnIn, animateCssOnOut } from "../services/animateCSS.js";
   import { onMount, onDestroy } from "svelte";
+
   var unObservers: (() => void)[] = [];
   onMount(() => {
     const parent = document.querySelector(".home-page");
@@ -35,15 +37,14 @@
         </label>
       </div>
       <div class="collapse-content">
-        <textarea class="textarea textarea-ghost w-full" placeholder="Content"
-        ></textarea>
+        <div>test</div>
       </div>
     </div>
   {/each}
   <div
     class="fixed bottom-20 right-5 p-1 bg-accent text-accent-content flex justify-center align-middle items-center rounded-btn z-20"
   >
-    <span class="material-symbols-rounded text-4xl"> add </span>
+    <span in:fly class="material-symbols-rounded text-4xl"> add </span>
   </div>
 </div>
 

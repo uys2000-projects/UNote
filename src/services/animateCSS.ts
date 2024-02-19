@@ -14,7 +14,7 @@ export const animateCSS = (
       },
       { once: true }
     );
-  });
+  }) as Promise<Event>;
 
 export const animateCssOnIn = (
   element: Element,

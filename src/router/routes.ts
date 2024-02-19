@@ -1,9 +1,11 @@
 import Home from "../pages/Home.svelte";
-import About from "../pages/About.svelte";
+import Tasks from "../pages/Tasks.svelte";
+import Notes from "../pages/Notes.svelte";
 import Login from "../pages/Login.svelte";
 import Create from "../pages/Create.svelte";
 import Settings from "../pages/Settings.svelte";
 import Error from "../pages/Error.svelte";
+import Test from "../pages/Test.svelte";
 
 export default [
   {
@@ -12,9 +14,14 @@ export default [
     component: Home,
   },
   {
-    name: "About",
-    path: "/about",
-    component: About,
+    name: "Tasks",
+    path: "/tasks",
+    component: Tasks,
+  },
+  {
+    name: "Notes",
+    path: "/notes",
+    component: Notes,
   },
   {
     name: "Create",
@@ -30,6 +37,11 @@ export default [
     name: "Login",
     path: "/login",
     component: Login,
+  },
+  {
+    name: "test",
+    path: "/test",
+    component: Test,
   },
   {
     name: "Error",

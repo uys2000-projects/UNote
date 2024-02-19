@@ -1,0 +1,71 @@
+
+.codex-editor__redactor{
+  @apply min-h-20 !pb-0
+}
+.ce-block--selected .ce-block__content{
+  @apply bg-base-200 mr-1
+}
+.ce-toolbar{
+  @apply bg-base-100 text-base-content
+}
+.ce-toolbar__plus,.ce-toolbar__settings-btn{
+  @apply bg-base-100 text-base-content border-neutral hover:bg-neutral hover:text-neutral-content
+}
+.ce-popover{
+  @apply bg-base-100 text-base-content border-neutral
+}
+.cdx-search-field, .cdx-search-field * {
+  @apply bg-neutral text-neutral-content placeholder:text-neutral-content
+}
+.cdx-settings-button,.cdx-settings-button *{
+  @apply bg-base-100 text-base-content fill-base-content hover:bg-neutral hover:text-neutral-content
+}
+.cdx-settings-button:hover *{
+  @apply bg-neutral text-neutral-content
+}
+.ce-popover-item{
+  @apply bg-base-100 text-base-content fill-base-content shadow-sm
+}
+.ce-popover-item:not(.ce-popover-item--no-hover):hover{
+  @apply bg-neutral text-neutral-content
+}
+.ce-popover-item__icon{
+  @apply bg-base-100 text-base-content
+}
+.ce-popover-item--confirmation .ce-popover-item__title{
+  @apply text-error
+}
+.ce-inline-toolbar{
+  @apply bg-base-100 text-base-content border-neutral p-1
+}
+.ce-inline-tool{
+  @apply hover:bg-neutral hover:text-neutral-content
+}
+.ce-inline-tool--active{
+  @apply text-primary
+}
+.ce-inline-toolbar__dropdown{
+  @apply hover:bg-neutral hover:text-neutral-content
+}
+.ce-conversion-toolbar{
+  @apply bg-base-100 text-base-content border-neutral p-1
+}
+.ce-conversion-tool,.ce-conversion-tool__icon{
+  @apply bg-base-100 text-base-content 
+}
+.ce-conversion-tool:not(.ce-conversion-tool--focused) {
+  @apply hover:bg-neutral hover:text-neutral-content
+}
+.ce-conversion-tool--focused{
+  @apply !bg-primary text-primary-content 
+}
+.text-spoiler{
+  @apply !bg-black !text-black;
+}
+.cdx-marker{
+  @apply !bg-accent
+}
+.text-spoiler *{
+  background: none !important;
+  color: black !important;
+}

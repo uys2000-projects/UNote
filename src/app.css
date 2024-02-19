@@ -1,4 +1,5 @@
 @import "./assets/style/google-icons.css";
+@import "./assets/style/editor.css";
 
 @tailwind base;
 @tailwind components;
